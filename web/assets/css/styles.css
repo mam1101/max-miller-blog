@@ -1,5 +1,6 @@
-.header {
-    display: flex;
-    padding: 1rem;
-    
+.header ul {
+    display: flex;   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
