@@ -25,9 +25,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.25rem;
 }
 
 .profile-card img {
     border-radius: 2rem;
     max-width: 200px;
+    margin-bottom: 0.25rem;
 }
