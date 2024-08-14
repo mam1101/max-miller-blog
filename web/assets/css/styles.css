@@ -8,6 +8,11 @@ nav ul {
     padding: 0;
     text-decoration: none;
     color: black;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 0.25rem;
 }
 
 body {
@@ -15,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 main {
@@ -24,7 +29,7 @@ main {
 
 @media (min-width: 1400px) {
     body {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     main, footer, nav {
         width: 960px; 
