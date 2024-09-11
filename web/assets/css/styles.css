@@ -1,3 +1,7 @@
+/*
+ VER: 1.01
+*/
+
 :root {
     --main-text-color: #CAD2C5;
     --main-background-color: #0D1F22;
@@ -68,7 +72,6 @@ footer {
     align-items: center;
     justify-content: center;
     height: 10vh;
-    width: 100%;
     margin-top: 2rem;
     background: var(--footer-background-color);
     color: var(--main-text-color);
