@@ -15,7 +15,7 @@
 }
 
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
   
 
@@ -72,7 +72,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 main h1 {
