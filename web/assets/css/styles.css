@@ -3,12 +3,14 @@
 */
 
 :root {
-    --main-text-color: #CAD2C5;
-    --main-background-color: #0D1F22;
+    --main-text-color: #0D1F22;
+    --main-background-color: #ffffff;
     --main-link-color: #B38A58;
-    --footer-background-color: #0D1F22;
+    --header-background-color: #0D1F22;
+    --header-text-color: #ffffff;
+    --footer-background-color: #ffffff;
     --article-text-color: #0D1F22;
-    --article-background-color: #CAD2C5;
+    --article-background-color: #ffffff;
 }
   
 
@@ -18,8 +20,9 @@ body {
     align-items: center;
 
     font-size: 1rem;
-    background-color: #0D1F22;
+    background-color: var(--main-background-color);
     color: var(--main-text-color);
+    margin: 0;
 }
 
 body a {
@@ -32,11 +35,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
 }
 
 nav {
     padding: 1rem;
-    color: var(--main-text-color);
 }
 nav ul {
     display: flex;   
@@ -96,17 +101,27 @@ footer .footer-inner-content {
     Writing
 */
 
-main article {
+article {
     color: var(--article-text-color);
     background: var(--article-background-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    line-height: 24px;
+    padding: 0.5rem 1rem;
+    line-height: 28px;
     font-size: 18px;
+    text-align: left;
+    margin: 0 -1rem;
+}
+
+article h1, h2, h3, h4, h5, h6 {
+    line-height: 28px;
     text-align: left;
 }
 
-main article img {
+
+article p {
+    text-align: left;
+}
+
+article img {
     width: 100%;
 }
 
@@ -153,6 +168,7 @@ Media Queries
         align-self: center;
         padding: 1.5rem;
         max-width: 680px;
+        border-radius: 0.25rem;
     }
     
 }
