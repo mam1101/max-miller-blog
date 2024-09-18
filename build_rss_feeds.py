@@ -13,8 +13,8 @@ for name, page in PAGES.items():
     if 'Doodle: ' in name:
         vars = page['vars']
         _items.append(rfeed.Item(
-            link = vars['title_doodle'],
-            title = f'{BASE_DOODLE_URL}{page["path"]}',
+            link = f'{BASE_DOODLE_URL}{page["path"]}',
+            title = vars['title_doodle'],
             author = "A Chair in the Void",
             description = vars['img_title_doodle']
         ))
