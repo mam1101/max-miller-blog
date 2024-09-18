@@ -1,0 +1,23 @@
+{
+    "global": {
+        
+    },
+    "pages": [
+        {
+            "name": "Home",
+            "path": "",
+            "template": "/pages/home.html",
+            "vars": {
+                "title": "Home"
+            }
+        },
+        {
+            "name": "About",
+            "path": "about",
+            "template": "/pages/about.html",
+            "vars": {
+                "title": "About"
+            }
+        }
+    ]
+}

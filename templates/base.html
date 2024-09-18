@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css?ver=1.03">
   
   
-  <title>CHANGE ME | Max Miller</title>
+  <title>{{ title }} | Max Miller</title>
 </head>
 
 <body>
@@ -21,9 +21,7 @@
       </ul>
     </nav>
   </header>
-  <main>
-    
-  </main>
+  <main>{% block content %}{% endblock %}</main>
   <footer>
     <div class="footer-inner-content">
       <span>© 2024 Don't Steal my Personal Website That's Weird </span>
