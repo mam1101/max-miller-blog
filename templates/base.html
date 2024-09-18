@@ -3,10 +3,10 @@
 <head>
   <meta data-rh="true" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
 
-  <link rel="stylesheet" href="/assets/css/styles.css?ver=1.2.0">
+  <link rel="stylesheet" href="/assets/css/styles.css?ver={{ style_css_version }}">
   
   
-  <title>Writing Archive | Max Miller</title>
+  <title>{{ title }} | Max Miller</title>
 </head>
 
 <body>
@@ -21,14 +21,7 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Writing Archive</h1>
-    <p>Most writing is cross posted from my blog, <a target="_blank" href="https://medium.com/a-chair-in-the-void">A Chair in the Void</a>.</p>
-    <h2>Recent Writing</h2>
-    <ul>
-    <li>9/8/2024 – <a href="/writing/blog/two-loons-on-todd-lake-9-8-2024/">Two Loons on Todd Lake</a></li>
-    </ul>
-
+  <main>{% block content %}{% endblock %}
   </main>
   <footer>
     <div class="footer-inner-content">

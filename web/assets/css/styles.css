@@ -37,6 +37,7 @@ body a {
 
 header {
     height: 10vh;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,20 +163,47 @@ article img {
 
 .actv-doodle {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .actv-doodle h2 {
     text-align: center;
 }
 
-
 .actv-doodle figcaption{
     font-size: 0.8rem;
 }
 
-.actv-doodle figure img {
-    width: 340px;
+.actv-doodle figure {
+    max-width: 500px;
 }
+
+.actv-doodle figure img {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.actv-doodle .actv-doodle-nav ul {
+    display: flex;   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.actv-doodle .actv-doodle-nav ul li a{
+    padding: 0 1rem;
+}
+
+.actv-doodle .actv-doodle-nav ul li:not(:last-child) a {   
+    border-right: 1px solid var(--main-text-color);
+} 
 
 /*
 Media Queries

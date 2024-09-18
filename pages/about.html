@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta data-rh="true" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
+{% extends "templates/base.html" %}
 
-  <link rel="stylesheet" href="/assets/css/styles.css?ver=1.2.0">
-  
-  
-  <title>About | Max Miller</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/writing/">Writing</a></li>
-        <li><a href="/doodles/">Doodles</a></li>
-        <li><a target="_blank" href="https://medium.com/a-chair-in-the-void">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+{% block content %}
     <h1> About </h1>
     <div>
     <p>
@@ -39,13 +18,5 @@
         and on his personal blog <a href="https://medium.com/a-chair-in-the-void">A Chair in the Void</a>.
     </p>
     </div>
+{% endblock %}
 
-  </main>
-  <footer>
-    <div class="footer-inner-content">
-      <span>© 2024 Don't Steal my Personal Website That's Weird </span>
-    </div>
-  </footer>
-</body>
-
-</html>
