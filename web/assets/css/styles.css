@@ -168,7 +168,6 @@ article img {
     text-align: center;
 }
 
-
 .actv-doodle figcaption{
     font-size: 0.8rem;
 }
@@ -176,6 +175,24 @@ article img {
 .actv-doodle figure img {
     width: 340px;
 }
+
+.actv-doodle .actv-doodle-nav ul {
+    display: flex;   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.actv-doodle .actv-doodle-nav ul li a{
+    padding: 0 1rem;
+}
+
+.actv-doodle .actv-doodle-nav ul li:not(:last-child) a {   
+    border-right: 1px solid var(--main-text-color);
+} 
 
 /*
 Media Queries

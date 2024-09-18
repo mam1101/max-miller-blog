@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta data-rh="true" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
+{% extends "templates/blog-article.html" %}
 
-  <link rel="stylesheet" href="/assets/css/styles.css?ver=1.03">
-  
-  
-  <title>Two Loons on Todd Lake | Max Miller</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/writing/">Writing</a></li>
-        <li><a href="/doodles/">Doodles</a></li>
-        <li><a target="_blank" href="https://medium.com/a-chair-in-the-void">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article>
+{% block article %}
     <h1>Two Loons on Todd Lake</h1>
     <a target="_blank" href="https://medium.com/a-chair-in-the-void/the-loons-on-todd-lake-94a5bff56293">Cross-Posted from A Chair in the Void</a>
 
@@ -62,13 +40,4 @@
 
     <p>Now I rest in my chair, drifting in the infinite void, after a relaxing weekend away. What I didn't say was how, about an hour into sitting on the beach with these loons puttering several yards offshore, my partner turned to me and said, &quot;I feel absolutely relaxed.&quot; I agreed. Like the loons, we'd managed to find a stillness on the lake. We read a lot that weekend, but more than that we sat and spoke with one another about the small bits of life that only come from that calm. Far off ideas of homes and marriage, and closer ideas of more trips, hikes, and activities to fill our autumn. I thought it was silly that I had watch on my wrist. Being aware of the time was useless on the lake - the loons certainly weren't tracking it. Maybe, in a different life, in a different void, I'd be happy as a loon.</p>    
     </article>
-</article>
-</main>
-  <footer>
-    <div class="footer-inner-content">
-      <span>© 2024 Don't Steal my Personal Website That's Weird </span>
-    </div>
-  </footer>
-</body>
-
-</html>
+{% endblock %}

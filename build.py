@@ -19,6 +19,8 @@ with open('site-config.json') as json_file:
 
 PAGES = site_config_dict['pages']
 
+GLOBAL_VARS = site_config_dict['global']
+
 def build_single(name, page):
     template_page = page["template"] or "tempaltes/main.html"
     template = JINJA_ENV.get_template(template_page)
@@ -34,7 +36,10 @@ def build_single(name, page):
     if not os.path.exists(file_path):
         open(file_path, 'x')
 
-    template.stream(vars).dump(file_path)
+    build_vars = GLOBAL_VARS
+    build_vars.update(vars)
+    
+    template.stream(build_vars).dump(file_path)
 
 def build_all():
     for name, page in PAGES.items():

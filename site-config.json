@@ -1,6 +1,7 @@
 {
     "global": {
-        
+        "path_doodle_home": "/doodles/",
+        "today_doodle": "1"
     },
     "pages": {
         "Home" : {
@@ -15,6 +16,38 @@
             "template": "/pages/about.html",
             "vars": {
                 "title": "About"
+            }
+        },
+        "Writing": {
+            "path": "writing",
+            "template": "/pages/writing.html",
+            "vars": {
+                "title": "Writing Archive"
+            }
+        },
+        "Doodles": {
+            "path": "doodles",
+            "template": "/pages/doodle.html",
+            "vars": {
+                "title": "Doodles",
+                "previous_doodle": "0",
+                "current_doodle": "1",
+                "img_alt_text_doodle": "1",
+                "img_url_doodle": "https://placehold.co/400x400"
+            }
+        },
+        "Blog": {
+            "path": "writing/blog",
+            "template": "/pages/blog.html",
+            "vars": {
+                "title": "Blog"
+            }
+        },
+        "Blog: Two Loons on Todd Lake": {
+            "path": "writing/blog/two-loons-on-todd-lake-9-8-2024",
+            "template": "/pages/blog/two-loons-on-todd-lake.html",
+            "vars": {
+                "title": "Two Loons on Todd Lake"
             }
         }
     }

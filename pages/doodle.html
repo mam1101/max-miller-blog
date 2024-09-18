@@ -1,0 +1,18 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+    <h1>ACTV: Doodles</h1>
+    <div class="actv-doodle">
+        <h2>A Place Holder</h2>
+        <figure>
+            <img src="{{ img_url_doodle }}" alt="{{ img_alt_text_doodle }}">
+            <figcaption>(https://maxmiller.ink/doodles/{{ current_doodle }}/)</figcaption>
+        </figure>
+        <div class="actv-doodle-nav">
+            <ul>
+                <li><a href="{{ path_doodle_home }}{{ today_doodle }}/">Today</a></li>
+                <li><a href="{{ path_doodle_home }}{{ previous_doodle }}/">Previous</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
