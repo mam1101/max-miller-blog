@@ -56,6 +56,7 @@ nav ul {
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 nav ul li a{
     padding: 0 1rem;
@@ -157,6 +158,23 @@ article img {
     width: 200px;
     object-fit: cover;
     object-position: top;
+}
+
+.actv-doodle {
+    text-align: center;
+}
+
+.actv-doodle h2 {
+    text-align: center;
+}
+
+
+.actv-doodle figcaption{
+    font-size: 0.8rem;
+}
+
+.actv-doodle figure img {
+    width: 420px;
 }
 
 /*
