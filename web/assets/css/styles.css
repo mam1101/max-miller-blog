@@ -162,6 +162,10 @@ article img {
 
 .actv-doodle {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .actv-doodle h2 {
@@ -172,8 +176,14 @@ article img {
     font-size: 0.8rem;
 }
 
+.actv-doodle figure {
+    max-width: 500px;
+}
+
 .actv-doodle figure img {
-    width: 340px;
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
 }
 
 .actv-doodle .actv-doodle-nav ul {
