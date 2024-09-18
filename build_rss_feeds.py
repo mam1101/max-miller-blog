@@ -22,7 +22,7 @@ for name, page in PAGES.items():
 feed = rfeed.Feed(title="ACTV: Doodles",
                   description = "The lastest Doodles from A Chair in the Void",
                   language="en-US",
-                  items=_items.reverse(),
+                  items=_items,
                   link=f'{BASE_DOODLE_URL}doodles/feed/'
 )
 
