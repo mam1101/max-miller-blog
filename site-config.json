@@ -2,22 +2,20 @@
     "global": {
         
     },
-    "pages": [
-        {
-            "name": "Home",
+    "pages": {
+        "Home" : {
             "path": "",
             "template": "/pages/home.html",
             "vars": {
                 "title": "Home"
             }
         },
-        {
-            "name": "About",
+        "About": {
             "path": "about",
             "template": "/pages/about.html",
             "vars": {
                 "title": "About"
             }
         }
-    ]
+    }
 }

@@ -1,25 +1,27 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 import json
 import os
+import sys
 from pathlib import Path
 
 BUILD_DIRECTORY = './web/'
+
+JINJA_ENV = Environment(
+    loader= FileSystemLoader(searchpath="."),
+    autoescape=select_autoescape()
+)
+
 
 site_config_dict = ""
 
 with open('site-config.json') as json_file:
     site_config_dict = json.load(json_file)
 
-pages = site_config_dict['pages']
+PAGES = site_config_dict['pages']
 
-env = Environment(
-    loader= FileSystemLoader(searchpath="."),
-    autoescape=select_autoescape()
-)
-
-for page in pages:
+def build_single(name, page):
     template_page = page["template"] or "tempaltes/main.html"
-    template = env.get_template(template_page)
+    template = JINJA_ENV.get_template(template_page)
 
     path = f'{BUILD_DIRECTORY}{page["path"]}'
     file_path = f'{path}/index.html'
@@ -32,4 +34,17 @@ for page in pages:
     if not os.path.exists(file_path):
         open(file_path, 'x')
 
-    rendered_page = template.stream(vars).dump(file_path)
+    template.stream(vars).dump(file_path)
+
+def build_all():
+    for name, page in PAGES.items():
+        build_single(name, page)
+
+
+if __name__ == "__main__":
+    try:
+        page_to_render = sys.argv[1]
+        if (page_to_render):
+            build_single(page_to_render, PAGES[page_to_render])
+    except:
+        build_all()
