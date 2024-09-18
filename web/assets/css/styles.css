@@ -37,6 +37,7 @@ body a {
 
 header {
     height: 10vh;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;

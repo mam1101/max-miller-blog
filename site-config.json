@@ -1,5 +1,7 @@
 {
     "global": {
+        "style_css_version": "1.2.0",
+
         "path_doodle_home": "/doodles/",
         "title_doodle": "Los Areneros Research Lab",
         "today_doodle": "1",
@@ -45,7 +47,7 @@
                 "title_doodle": "Los Areneros Research Lab",
                 "previous_doodle": "1",
                 "current_doodle": "1",
-                "img_alt_text_doodle": "You gotta admit it, the ants look GREAT in IMAX.",
+                "img_title_doodle": "You gotta admit it, the ants look GREAT in IMAX.",
                 "img_url_doodle": "/assets/img/doodles/1.jpeg"
             }
         },
