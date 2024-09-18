@@ -1,7 +1,12 @@
 {
     "global": {
         "path_doodle_home": "/doodles/",
-        "today_doodle": "1"
+        "title_doodle": "Los Areneros Research Lab",
+        "today_doodle": "1",
+        "previous_doodle": "1",
+        "current_doodle": "1",
+        "img_alt_text_doodle": "You gotta admit it, the ants look GREAT in IMAX.",
+        "img_url_doodle": "/assets/img/doodles/1.jpeg"
     },
     "pages": {
         "Home" : {
@@ -29,11 +34,19 @@
             "path": "doodles",
             "template": "/pages/doodle.html",
             "vars": {
-                "title": "Doodles",
-                "previous_doodle": "0",
+                "title": "Doodles"
+            }
+        },
+        "Doodle: Los Areneros Research Lab": {
+            "path": "doodles/1",
+            "template": "/pages/doodle.html",
+            "vars": {
+                "title": "Los Areneros Research Lab",
+                "title_doodle": "Los Areneros Research Lab",
+                "previous_doodle": "1",
                 "current_doodle": "1",
-                "img_alt_text_doodle": "1",
-                "img_url_doodle": "https://placehold.co/400x400"
+                "img_alt_text_doodle": "You gotta admit it, the ants look GREAT in IMAX.",
+                "img_url_doodle": "/assets/img/doodles/1.jpeg"
             }
         },
         "Blog": {
