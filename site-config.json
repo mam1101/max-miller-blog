@@ -3,7 +3,7 @@
         "style_css_version": "1.2.0",
 
         "path_doodle_home": "/doodles/",
-        "title_doodle": "Los Areneros Research Lab",
+        "title_doodle": "Los Areneros National Laboratory",
         "today_doodle": "1",
         "previous_doodle": "1",
         "current_doodle": "1",
@@ -43,8 +43,8 @@
             "path": "doodles/1",
             "template": "/pages/doodle.html",
             "vars": {
-                "title": "Los Areneros Research Lab",
-                "title_doodle": "Los Areneros Research Lab",
+                "title": "Los Areneros National Laboratory",
+                "title_doodle": "Los Areneros National Laboratory",
                 "previous_doodle": "1",
                 "current_doodle": "1",
                 "img_title_doodle": "You gotta admit it, the ants look GREAT in IMAX.",
