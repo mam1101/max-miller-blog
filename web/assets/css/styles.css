@@ -205,6 +205,10 @@ article img {
     border-right: 1px solid var(--main-text-color);
 } 
 
+.substack-subscribe-box {
+    max-width: 300px;
+}
+
 /*
 Media Queries
 */
