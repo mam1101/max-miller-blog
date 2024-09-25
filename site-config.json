@@ -64,6 +64,21 @@
             "vars": {
                 "title": "Two Loons on Todd Lake"
             }
+        },
+        "Blog: Ten Days in Albania Index": {
+            "path": "writing/blog/ten-days-in-albania/",
+            "template": "/pages/blog/ten-days-in-albania/ten-days-in-albania.html",
+            "vars": {
+                "title": "Ten Days in Albania"
+            }
+        },
+        "Blog: Ten Days in Albania Chapter 1": {
+            "path": "writing/blog/ten-days-in-albania/chapter-1/",
+            "template": "/pages/blog/ten-days-in-albania/chapter-1.html",
+            "vars": {
+                "img_base_path": "/assets/img/blog/ten-days-in-albania/chapter-1/",
+                "title": "Chapter 1 | Ten Days in Albania"
+            }
         }
     }
 }

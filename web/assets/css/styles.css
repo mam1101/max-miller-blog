@@ -140,6 +140,19 @@ article img {
     width: 100%;
 }
 
+article figure {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+article iframe {
+    width: 100% !important;
+}
+
+figure img {
+    width: 100%;
+}
+
 /*
     Custom elements
 */
@@ -206,7 +219,7 @@ article img {
 } 
 
 .substack-subscribe-box {
-    max-width: 300px;
+    width: 100%;
 }
 
 /*
