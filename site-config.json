@@ -65,6 +65,21 @@
                 "title": "Two Loons on Todd Lake"
             }
         },
+        "Blog: Green Springs Index": {
+            "path": "writing/blog/green-springs/",
+            "template": "/pages/blog/green-springs/green-springs.html",
+            "vars": {
+                "title": "Green Springs"
+            }
+        },
+        "Blog: Green Springs Chapter 1": {
+            "path": "writing/blog/green-springs/chapter-1/",
+            "template": "/pages/blog/green-springs/chapter-1.html",
+            "vars": {
+                "img_base_path": "/assets/img/blog/green-springs/chapter-1/",
+                "title": "Prologue | Green Springs"
+            }
+        },
         "Blog: Ten Days in Albania Index": {
             "path": "writing/blog/ten-days-in-albania/",
             "template": "/pages/blog/ten-days-in-albania/ten-days-in-albania.html",
