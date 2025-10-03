@@ -6,7 +6,9 @@
   {% block meta_tags %}{% endblock %}
 
   <link rel="stylesheet" href="/assets/css/styles.css?ver={{ style_css_version }}">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   
   <title>{{ title }} | Max Miller</title>
 </head>
@@ -18,7 +20,6 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/writing/">Writing</a></li>
-        <li><a href="/doodles/{{today_doodle}}/">Doodles</a></li>
         <li><a target="_blank" href="https://achairinthevoid.substack.com/p/what-is-this-place">Subscribe</a></li>
       </ul>
     </nav>

@@ -15,7 +15,8 @@
 }
 
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "EB Garamond", serif;
 }
   
 
@@ -166,12 +167,12 @@ figure img {
 
 .profile-card img {
     border-radius: 2rem;
-    max-width: 200px;
+    max-width: 350px;
     margin-bottom: 0.25rem;
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .actv-doodle {
